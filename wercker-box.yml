@@ -1,0 +1,18 @@
+name: ffmpeg-ruby-rvm
+version: 0.0.1
+inherits: wercker/rvm@2.2.0
+type: box
+platform: ubuntu@12.04
+description: wercker box with rvm and git 2.1
+keywords:
+  - git
+  - ruby
+  - rvm
+packages:
+  - git
+script: |
+  sudo apt-get update
+  sudo apt-get install -y python-software-properties
+  sudo add-apt-repository -y ppa:git-core/ppa
+  sudo apt-get update
+  sudo apt-get install -y git
