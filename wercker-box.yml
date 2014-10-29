@@ -1,4 +1,4 @@
-name: ffmpeg-ruby-rvm
+name: rvm-updated-git
 version: 0.0.1
 inherits: wercker/rvm@2.2.0
 type: box
